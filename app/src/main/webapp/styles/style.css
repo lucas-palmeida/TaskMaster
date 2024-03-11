@@ -72,9 +72,9 @@ nav ul li a:hover {
 }
 
 main {
-    margin-left: 220px;
+    max-width: 60vw;
     padding: 20px;
-    margin-top: 150px;
+    margin: 150px auto;
     text-align: center;
 }
 
@@ -175,4 +175,58 @@ footer {
 
 button[type="submit"]:hover {
     background-color: #1e77e6;
+}
+
+.task-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.button-container {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    background-color: #2896FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-button {
+    background-color: #FF5722;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #1e77e6;
+}
+
+.task-card h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.task-card p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.task-card .task-datetime {
+    text-align: right;
+    font-style: italic;
 }
